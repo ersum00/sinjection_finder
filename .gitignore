@@ -1,0 +1,22 @@
+# Python cache dosyaları
+__pycache__/
+*.py[cod]
+
+# Ortam dosyaları
+.env
+.venv/
+venv/
+*.egg-info/
+
+# Çıktı dosyaları
+*.log
+*.sqlite3
+*.db
+
+# IDE ve editör dosyaları
+.vscode/
+.idea/
+
+# OS/Editor junk
+.DS_Store
+Thumbs.db

